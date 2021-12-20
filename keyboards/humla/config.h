@@ -1,4 +1,4 @@
-#ifndef CONFIG_H
+//#ifndef CONFIG_H
 #define CONFIG_H
 
 #include "config_common.h"
@@ -41,4 +41,8 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
-#endif
+/* Prevent sticky modifier keys on the homerow during key rollover */
+#define TAPPING_TERM 300
+#define IGNORE_MOD_TAP_INTERRUPT
+
+//#endif

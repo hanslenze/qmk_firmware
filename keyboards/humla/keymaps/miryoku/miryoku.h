@@ -11,10 +11,13 @@
 #define U_NP KC_NO // key is not present
 #define U_NA KC_NO // present but not available for use
 #define U_NU KC_NO // available but not used
+#define X_NP KC_NO // key is not present
+#define X_NA KC_NO // present but not available for use
+#define X_NU KC_NO // available but not used
 
-enum layers { BASE, BUTTON, MEDIA, NAV, MOUSE, SYM, NUM, FUN };
+// enum layers { BASE, BUTTON, MEDIA, NAV, MOUSE, SYM, NUM, FUN };
+enum layers { BASE, NAVR, MOUR, MEDR, NSL, NSSL, FUNL, BUTTON };
 
-// #elif defined MIRYOKU_CLIPBOARD_WIN
 #define U_RDO C(KC_Y)
 #define U_PST C(KC_V)
 #define U_CPY C(KC_C)
