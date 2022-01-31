@@ -13,7 +13,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KEYMAP(
 		// numbers and symbols
 		KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR,   KC_TRNS, KC_7, KC_8, KC_9, KC_TRNS,
-		KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_PLUS,   KC_TRNS, KC_4, KC_5, KC_6, KC_TRNS, 
+		KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_PLUS,   KC_MINS, KC_4, KC_5, KC_6, KC_TRNS, 
 		KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE,   KC_TRNS, KC_1, KC_2, KC_3, KC_LSFT, 
 		                  KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_0, KC_TRNS),
 
@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		// navigation
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, 
 		KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, 
-		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_TRNS, 
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END, 
 		                  KC_TRNS, KC_LSFT, KC_TRNS,   KC_BSPC, TO(0), KC_DEL),
 
 	KEYMAP(
@@ -43,10 +43,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM cmb_we[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM cmb_sd[] = {KC_S, KC_D, COMBO_END};
+const uint16_t PROGMEM cmb_zs[] = {KC_Z, KC_S, COMBO_END};
+const uint16_t PROGMEM cmb_xd[] = {KC_X, KC_D, COMBO_END};
+const uint16_t PROGMEM cmb_qw[] = {KC_Q, KC_W, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
 	COMBO(cmb_we, TO(2)),
 	COMBO(cmb_sd, TO(3)),
+	COMBO(cmb_zs, OSM(MOD_LCTL)),
+	COMBO(cmb_xd, OSM(MOD_LALT)),
+    COMBO(cmb_qw, KC_ESC),
 	//COMBO(cmb_cv, MO(6)),
 	//COMBO(cmb_aa, KC_NO),
 };
