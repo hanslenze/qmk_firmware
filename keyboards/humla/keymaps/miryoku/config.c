@@ -13,7 +13,7 @@
 #define IGNORE_MOD_TAP_INTERRUPT
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
-#define TAPPING_FORCE_HOLD
+// #define TAPPING_FORCE_HOLD
 
 // Auto Shift
 #define NO_AUTO_SHIFT_ALPHA
@@ -31,12 +31,12 @@
 #define MOUSEKEY_MAX_SPEED      6
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
+//#define COMBO_COUNT 1
 
-// Thumb Combos
+/* Thumb Combos
 #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
   #define COMBO_COUNT 8
   #define COMBO_TERM 200
   #define EXTRA_SHORT_COMBOS
 #endif
-
-#include "custom_config.h"
+*/

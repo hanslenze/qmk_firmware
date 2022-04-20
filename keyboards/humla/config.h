@@ -1,4 +1,4 @@
-//#ifndef CONFIG_H
+#ifndef CONFIG_H
 #define CONFIG_H
 
 #include "config_common.h"
@@ -23,12 +23,6 @@
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-/* number of backlight levels */
-
-#ifdef BACKLIGHT_PIN
-#define BACKLIGHT_LEVELS 0
-#endif
-
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCING_DELAY 5
 
@@ -41,8 +35,4 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
-/* Prevent sticky modifier keys on the homerow during key rollover */
-#define TAPPING_TERM 300
-#define IGNORE_MOD_TAP_INTERRUPT
-
-//#endif
+#endif

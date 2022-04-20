@@ -30,3 +30,33 @@ K10,   K11,   K12,   K13,   K14,   K15,   K16,   K17,   K18,   K19, \
 K20,   K21,   K22,   K23,   K24,   K25,   K26,   K27,   K28,   K29, \
                      K32,   K33,   K34,   K35,   K36,   K37 \
 )
+
+// default but used in macros
+#undef TAPPING_TERM
+#define TAPPING_TERM 200
+
+// Prevent normal rollover on alphas from accidentally triggering mods.
+#define IGNORE_MOD_TAP_INTERRUPT
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+// #define TAPPING_FORCE_HOLD
+
+// Auto Shift
+#define NO_AUTO_SHIFT_ALPHA
+#define AUTO_SHIFT_TIMEOUT TAPPING_TERM
+#define AUTO_SHIFT_NO_SETUP
+
+// Mouse key speed and acceleration.
+#undef MOUSEKEY_DELAY
+#define MOUSEKEY_DELAY          0
+#undef MOUSEKEY_INTERVAL
+#define MOUSEKEY_INTERVAL       16
+#undef MOUSEKEY_WHEEL_DELAY
+#define MOUSEKEY_WHEEL_DELAY    0
+#undef MOUSEKEY_MAX_SPEED
+#define MOUSEKEY_MAX_SPEED      6
+#undef MOUSEKEY_TIME_TO_MAX
+#define MOUSEKEY_TIME_TO_MAX    64
+
+#undef COMBO_COUNT
+#define COMBO_COUNT 4
